@@ -1,12 +1,7 @@
 import './index.scss';
-interface PageDrawPropsType {
-  a: string;
-}
-const PageDraw: React.FC<PageDrawPropsType> = (
-  props: PageDrawPropsType
-) => {
-  const { a } = props;
-  console.log(a);
+
+const PageDraw: React.FC = () => {
+  console.log(1);
   return (
     <>
       <div className='page-draw'>Draw.</div>

@@ -1,12 +1,7 @@
 import './index.scss';
-interface PageEditorPropsType {
-  a: string;
-}
-const PageEditor: React.FC<PageEditorPropsType> = (
-  props: PageEditorPropsType
-) => {
-  const { a } = props;
-  console.log(a);
+
+const PageEditor: React.FC = () => {
+  console.log(1);
   return (
     <>
       <div className='page-editor'>Editor.</div>
