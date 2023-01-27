@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@antv/x6': ^2.1.6
+  '@antv/x6-react-shape': ^2.1.0
   '@types/node': ^18.11.18
   '@types/react': ^18.0.26
   '@types/react-dom': ^18.0.9
@@ -13,6 +15,8 @@ specifiers:
   vite: ^4.0.0
 
 dependencies:
+  '@antv/x6': 2.1.6
+  '@antv/x6-react-shape': 2.1.0_96b5fc1d8b66c92f5e6d55c0b2f2af96
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.8.0_react-dom@18.2.0+react@18.2.0
@@ -27,6 +31,37 @@ devDependencies:
   vite: 4.0.4_@types+node@18.11.18+sass@1.57.1
 
 packages:
+
+  /@antv/x6-common/2.0.5:
+    resolution: {integrity: sha512-8OQHqZX8KSfEa4d2o0tAs7Er2jjm9PuQ6shPbmyTH/Ym0yY+aI8U/kqlC+R/xHlywLKVIkhePVODlbiB/4QOSQ==}
+    dependencies:
+      lodash-es: 4.17.21
+      utility-types: 3.10.0
+    dev: false
+
+  /@antv/x6-geometry/2.0.4:
+    resolution: {integrity: sha512-dlsLNRRTiCw8TsJ/03j3y5IbbbK4Npf6zBH6kAx8nnW+edNT/TAOChvPRzizwD+vA7wY9Rp2AiRnp/vCdIYC5w==}
+    dev: false
+
+  /@antv/x6-react-shape/2.1.0_96b5fc1d8b66c92f5e6d55c0b2f2af96:
+    resolution: {integrity: sha512-HY9tPbMU1Z7Tu2lwBenXJe53DzT2MFt9LXRBPyN+r5qu8kP3VMU1vzS+2+LsPFdPL3s71wolGjL1GExUoh77JQ==}
+    peerDependencies:
+      '@antv/x6': ^2.x
+      react: '>=18.0.0'
+      react-dom: '>= 18.0.0'
+    dependencies:
+      '@antv/x6': 2.1.6
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@antv/x6/2.1.6:
+    resolution: {integrity: sha512-Nsy3VXa6WAUPB9w8QbRSiIfBaTWH0qia0f7uMK3TVRnaT5HSpio6XxDsxil/xqCwqpv83SMqcruuDHuSa2pI/Q==}
+    dependencies:
+      '@antv/x6-common': 2.0.5
+      '@antv/x6-geometry': 2.0.4
+      utility-types: 3.10.0
+    dev: false
 
   /@esbuild/android-arm/0.16.17:
     resolution: {integrity: sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==}
@@ -513,6 +548,10 @@ packages:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
 
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
+
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
@@ -655,6 +694,11 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /utility-types/3.10.0:
+    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
+    engines: {node: '>= 4'}
+    dev: false
 
   /vite/4.0.4_@types+node@18.11.18+sass@1.57.1:
     resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}

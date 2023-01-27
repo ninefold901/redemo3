@@ -6,8 +6,8 @@ export default function ErrorPage() {
 
   return (
     <div id='error-page'>
-      <h1>404!</h1>
-      <p>i can not find the page</p>
+      <h1>Error!</h1>
+      <p>something wrong with:</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
