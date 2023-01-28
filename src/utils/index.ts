@@ -20,4 +20,3 @@ export function waitUntil(flag: () => any, cb: (f: any) => void) {
     }
   }, 1000);
 }
-

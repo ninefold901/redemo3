@@ -1,4 +1,4 @@
-# redemo3
+# REDEMO3
 
 - react 18
 - vite 4
@@ -14,4 +14,3 @@
 ### Monaco editor
 > - document: https://microsoft.github.io/monaco-editor/
 > - github: https://github.com/microsoft/monaco-editor
-
