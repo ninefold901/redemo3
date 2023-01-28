@@ -6,8 +6,9 @@
 export function waitUntil(flag: () => any, cb: (f: any) => void) {
   let count = 20;
   let timer = setInterval(() => {
-    if (flag()) {
-      cb(flag());
+    const flagResult = flag();
+    if (flagResult) {
+      cb(flagResult);
       clearInterval(timer);
     } else {
       count--;
@@ -19,4 +20,3 @@ export function waitUntil(flag: () => any, cb: (f: any) => void) {
     }
   }, 1000);
 }
-

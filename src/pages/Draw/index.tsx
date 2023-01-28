@@ -21,7 +21,7 @@ const PageDraw: React.FC = () => {
       const graph = new Graph({
         container: ele,
         width: 800,
-        height: 600,
+        height: 500,
         background: {
           color: '#F2F7FA',
         },
