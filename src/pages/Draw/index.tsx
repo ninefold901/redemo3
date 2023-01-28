@@ -1,6 +1,6 @@
-import { waitUntil } from '@/utils';
 import { Graph } from '@antv/x6';
 import { register } from '@antv/x6-react-shape';
+import { waitUntil } from '@/utils';
 import './index.scss';
 
 const NodeComponent = () => {
